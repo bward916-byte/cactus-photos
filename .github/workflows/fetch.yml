@@ -1,0 +1,23 @@
+name: fetch
+on:
+  push:
+    paths: ['images.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: download
+        run: |
+          mkdir -p originals
+          while IFS='|' read -r pid n url; do
+            [ -z "$pid" ] && continue
+            mkdir -p originals/$pid
+            [ -f originals/$pid/$n.jpg ] || curl -sL "$url" -o originals/$pid/$n.jpg
+          done < images.txt
+          git config user.name bot; git config user.email bot@users.noreply.github.com
+          git add originals; git commit -m "fetch originals" || echo nothing
+          git push
