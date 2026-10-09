@@ -18,4 +18,3 @@
 9659646509295|1|https://cdn.shopify.com/s/files/1/0647/6683/6975/files/il_fullxfull.3214616229_gqi0.jpg
 9659646738671|1|https://cdn.shopify.com/s/files/1/0647/6683/6975/files/il_fullxfull.2940955737_300g.jpg
 9659646771439|1|https://cdn.shopify.com/s/files/1/0647/6683/6975/files/il_fullxfull.2812257012_klnx.jpg
-bulk|variants|https://storage.googleapis.com/shopify-tiers-assets-prod-us-east1/bulk-operation-outputs/393cfc35da49c2ac17f3412897c7?GoogleAccessId=assets-us-prod%40shopify-tiers.iam.gserviceaccount.com&Expires=1792116008&Signature=nmVZXGNE7H9NBqdkkZUPbFNFiv4sH5cg12L8GxwhpBKrUqJP%2B%2F4Ii90EttcJo1yTYC%2BdZHQ2Yf2d1BFyug4Akq%2FUT4dDvhbk11BBjw0hfoSkrWOevgj6ghDXDuGExtnQYsYOPM%2BmVWJbL9zLlsbYnRb4AGg2M5ZgPxtLuMsKNIP4XWADdazmaXUE7%2F06x9EKO87%2Bsyg2mWSjtUx1WXAJ2WLy3OTI5fabJ6iu5BvLEt6kHHRoyxFKTKTikInOW6mW%2FgNKZr1%2FPPSoHljNTTRE2rGryWLyxpqaSd0XuWH2H7dUK7erdARdEHItJzX7kXpKJI%2F%2FG9QZSmWwFBvMTFzeMg%3D%3D
