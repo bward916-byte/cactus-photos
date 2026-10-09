@@ -1,0 +1,20 @@
+name: amazon
+on:
+  push:
+    paths: ['amz/url.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  grab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm i playwright@1.47.2 && npx playwright install --with-deps chromium
+      - run: node amz/grab.mjs "$(cat amz/url.txt)"
+      - run: |
+          git config user.name bot; git config user.email bot@users.noreply.github.com
+          git add amz; git commit -m "amazon grab" || echo nothing
+          git pull --rebase; git push
