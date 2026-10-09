@@ -21,3 +21,4 @@
 amz|share|https://www.amazon.com/drive/v1/shares/Kscxk5dLRzS-JSpSbuygBQ.vhVPye5vFb4QDXN9IDo4Qn?shareId=Kscxk5dLRzS-JSpSbuygBQ.vhVPye5vFb4QDXN9IDo4Qn&resourceVersion=V2&ContentType=JSON
 amz|share2|https://www.amazon.com/drive/v1/shares/Kscxk5dLRzS-JSpSbuygBQ?shareId=Kscxk5dLRzS-JSpSbuygBQ&resourceVersion=V2&ContentType=JSON
 amz|kids|https://www.amazon.com/drive/v1/nodes/vhVPye5vFb4QDXN9IDo4Qn/children?asset=ALL&limit=200&searchOnFamily=false&tempLink=true&shareId=Kscxk5dLRzS-JSpSbuygBQ&offset=0&resourceVersion=V2&ContentType=JSON
+amz|page|https://www.amazon.com/photos/shared/Kscxk5dLRzS-JSpSbuygBQ.vhVPye5vFb4QDXN9IDo4Qn
