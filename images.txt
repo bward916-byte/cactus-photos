@@ -19,3 +19,5 @@
 9659646738671|1|https://cdn.shopify.com/s/files/1/0647/6683/6975/files/il_fullxfull.2940955737_300g.jpg
 9659646771439|1|https://cdn.shopify.com/s/files/1/0647/6683/6975/files/il_fullxfull.2812257012_klnx.jpg
 amz|share|https://www.amazon.com/drive/v1/shares/Kscxk5dLRzS-JSpSbuygBQ.vhVPye5vFb4QDXN9IDo4Qn?shareId=Kscxk5dLRzS-JSpSbuygBQ.vhVPye5vFb4QDXN9IDo4Qn&resourceVersion=V2&ContentType=JSON
+amz|share2|https://www.amazon.com/drive/v1/shares/Kscxk5dLRzS-JSpSbuygBQ?shareId=Kscxk5dLRzS-JSpSbuygBQ&resourceVersion=V2&ContentType=JSON
+amz|kids|https://www.amazon.com/drive/v1/nodes/vhVPye5vFb4QDXN9IDo4Qn/children?asset=ALL&limit=200&searchOnFamily=false&tempLink=true&shareId=Kscxk5dLRzS-JSpSbuygBQ&offset=0&resourceVersion=V2&ContentType=JSON
