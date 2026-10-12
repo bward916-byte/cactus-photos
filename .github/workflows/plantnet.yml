@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: identify
         env:
-          KEY: 2b10niW0CDBTdU6uaow0TXfO
+          KEY: ${{ secrets.PLANTNET_KEY }}
         run: |
           rm -rf plantnet/results; mkdir -p plantnet/results
           while IFS='|' read -r name url; do
