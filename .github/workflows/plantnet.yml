@@ -1,0 +1,28 @@
+name: plantnet
+on:
+  push:
+    paths: ['plantnet/urls.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  identify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: identify
+        env:
+          KEY: ${{ secrets.PLANTNET_KEY }}
+        run: |
+          mkdir -p plantnet/results
+          while IFS='|' read -r name url; do
+            [ -z "$name" ] && continue
+            curl -s -G "https://my-api.plantnet.org/v2/identify/all" \
+              --data-urlencode "api-key=$KEY" --data-urlencode "images=$url" \
+              --data-urlencode "organs=auto" --data-urlencode "lang=en" \
+              --data-urlencode "nb-results=5" -o "plantnet/results/$name.json"
+            sleep 1
+          done < plantnet/urls.txt
+          git config user.name bot; git config user.email bot@users.noreply.github.com
+          git add plantnet/results; git commit -m "plantnet results" || echo nothing
+          git pull --rebase; git push
