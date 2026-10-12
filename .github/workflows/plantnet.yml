@@ -14,13 +14,11 @@ jobs:
         env:
           KEY: 2b10niW0CDBTdU6uaow0TXfO
         run: |
-          mkdir -p plantnet/results
+          rm -rf plantnet/results; mkdir -p plantnet/results
           while IFS='|' read -r name url; do
             [ -z "$name" ] && continue
-            curl -s -G "https://my-api.plantnet.org/v2/identify/all" \
-              --data-urlencode "api-key=$KEY" --data-urlencode "images=$url" \
-              --data-urlencode "organs=auto" --data-urlencode "lang=en" \
-              --data-urlencode "nb-results=5" -o "plantnet/results/$name.json"
+            curl -s -X POST "https://my-api.plantnet.org/v2/identify/all?api-key=$KEY&lang=en&nb-results=5" \
+              -F "images=@$url" -F "organs=auto" -o "plantnet/results/$name.json"
             sleep 1
           done < plantnet/urls.txt
           git config user.name bot; git config user.email bot@users.noreply.github.com
